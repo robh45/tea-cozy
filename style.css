@@ -1,0 +1,140 @@
+html {
+  font-size: 22px;
+  scroll-behavior: smooth;
+}
+
+body, 
+header {
+  font-family: Helvetica, sans-serif;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  min-height: 69px;
+  border-bottom: 1px solid seashell;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+  @media screen and (max-width: 500px) {
+    header {
+      flex-direction: column;
+    }
+  }
+
+header a {
+  margin-right: 20px;
+}
+
+.logo{
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+  @media screen and (max-width: 500px) {
+    .logo {
+      margin: auto;
+    }
+  }
+
+#logo-image {
+  height: 50px;
+}
+
+.mission {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(./images/img-mission-background.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+.mission-bar {
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+
+#block {
+  display: block;
+  width: 100%;
+}
+
+.tea-of-the-month{
+  max-width: 1000px;
+  height: auto;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tea-of-the-month img {
+  height: 200px;
+  width: 300px;
+}
+
+.locations-section {
+  max-width: 1200px;
+  min-height: 500px;
+  margin: auto;
+  background-image: url(./images/img-locations-background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#locations-heading {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+
+}
+
+.location {
+  height: 300px;
+  width: 300px;
+  margin: 15px 20px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.contact {
+  height: 200px;
+}
+
+footer {
+  display: flex;
+}
+
+#copyright {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  #copyright {
+    font-size: 12px;
+  }
+}
